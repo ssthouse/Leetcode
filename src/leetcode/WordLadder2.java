@@ -1,9 +1,6 @@
 package leetcode;
 
-import java.util.HashSet;
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.Set;
+import java.util.*;
 
 /* Given two words (start and end), and a dictionary, find the length of shortest transformation sequence from start to end, such that:
  * Only one letter can be changed at a time
@@ -50,4 +47,30 @@ public class WordLadder2 {
 		}
 		return 0;
 	}
+
+    /************************
+     * my solution 递归实现
+     *****************/
+
+    public int getResult(String start, String end, Set<String> dict) {
+       return 0;
+    }
+
+
+    public static void main(String[] args) {
+        String[] strArray = {"hot", "dot", "dog", "lot", "log"};
+        Set<String> dict = new HashSet<>();
+        Collections.addAll(dict, strArray);
+        int result = new WordLadder2().getResult("hit", "cog", dict);
+        System.out.println(result);
+
+        //main 可以调用所在类的   私有静态方法
+        // int传值调用  不会改变int数据
+        int  step = 0;
+        WordLadder2.changeInt(step);
+    }
+
+    private static void changeInt(int intValue) {
+        intValue = intValue + 1;
+    }
 }
