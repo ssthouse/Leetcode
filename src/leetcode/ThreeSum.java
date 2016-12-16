@@ -14,7 +14,7 @@ import java.util.*;
 //TLE
 public class ThreeSum {
 	public ArrayList<ArrayList<Integer>> threeSum(int[] num) {
-	
+
 		ArrayList<ArrayList<Integer>> res = new ArrayList<ArrayList<Integer>>();
 		ArrayList<Integer> list = new ArrayList<Integer>();
 		if(num.length<3)
@@ -33,6 +33,7 @@ public class ThreeSum {
 				}
 			}
 		}
-		return res;
+        return res;
 	}
+
 }

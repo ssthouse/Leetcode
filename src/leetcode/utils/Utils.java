@@ -14,4 +14,9 @@ public class Utils {
             System.out.println(Arrays.toString(bean.toArray()));
         }
     }
+
+
+    public static void print(Object msg) {
+        System.out.println(msg);
+    }
 }
